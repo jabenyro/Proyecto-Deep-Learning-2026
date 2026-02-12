@@ -1,7 +1,7 @@
 # 🎵 Predicción de Popularidad en Spotify (1921-2020)
-Trabajo Final - Asignatura de Aprendizaje Profundo"\n"
-Autores: Javier Beny Rodríguez y Adrián Blat Campos
-Fecha: Febrero 2026
+Trabajo Final - Asignatura de Aprendizaje Profundo  
+Autores: Javier Beny Rodríguez y Adrián Blat Campos  
+Fecha: Febrero 2026  
 
 # 📖 Descripción del Proyecto
 Este proyecto tiene como objetivo predecir la popularidad de una canción (variable continua 0-100) basándose en sus características de audio (bailabilidad, energía, acústica, etc.) y metadatos. Se comparará el rendimiento de un modelo clásico (Regresión Lineal) frente a una arquitectura de Deep Learning (Perceptrón Multicapa - MLP).
