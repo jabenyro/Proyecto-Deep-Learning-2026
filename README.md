@@ -22,7 +22,8 @@ Uno de los desafíos principales de este dataset es la gran cantidad de valores 
 
 ### 3.1. Distinción: Impopularidad Genuina vs. Ruido Técnico
 ✅ SE MANTIENEN (Señal Histórica): Canciones antiguas (1920-1960) o de nicho con popularidad 0. Justificación: Representan datos válidos sobre cómo la antigüedad penaliza el éxito.  
-❌ SE ELIMINAN (Ruido Técnico): Archivos que no son canciones musicales.  
+
+❌ SE ELIMINAN (Ruido Técnico): Archivos que no son canciones musicales.
 - Duración < 40s: Intros, efectos de sonido.  
 - Speechiness > 0.90: Audiolibros, discursos.  
 - Tempo = 0: Errores de datos.
