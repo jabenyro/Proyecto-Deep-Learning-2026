@@ -1,14 +1,31 @@
 # 🎵 Predicción de Popularidad en Spotify (1921-2020)
-Trabajo Final - Asignatura de Aprendizaje Profundo  
+Trabajo Final - Asignatura de Aprendizaje Profundo 
 Autores: Javier Beny Rodríguez y Adrián Blat Campos  
 Fecha: Febrero 2026  
 
-# 📖 Descripción del Proyecto
-Este proyecto tiene como objetivo predecir la popularidad de una canción (variable continua 0-100) basándose en sus características de audio (bailabilidad, energía, acústica, etc.) y metadatos. Se comparará el rendimiento de un modelo clásico (Regresión Lineal) frente a una arquitectura de Deep Learning (Perceptrón Multicapa - MLP).
 
+## 📚 1. Definición del Problema y Estado del Arte
 
-## 📚 1. Definición del Problema 
-El problema de la predicción de popularidad consiste en entrenar modelos de aprendizaje supervisado para estimar un valor numérico. El desafío radica en la subjetividad de la "popularidad".
+### 1.1. Descripción del Problema
+El objetivo principal de este proyecto es determinar la capacidad predictiva de las características de audio intrínsecas de una canción sobre su popularidad comercial. Se trata de un problema de regresión supervisada, donde el modelo debe aprender una función que mapee variables acústicas (como 'tempo', 'energy', 'danceability', etc.) a un valor continuo de popularidad en el rango [0-100].
+
+### 1.2. Análisis del Estado del Arte (SOTA)
+En la literatura sobre Music Information Retrieval (MIR) y predicción de éxitos, se ha establecido que la relación entre las características de audio y la popularidad no es lineal. Por ello, es necesario comparar modelos lineales clásicos frente a arquitecturas no lineales más complejas.
+
+Para este proyecto, se ha diseñado una tabla de experimentación que se irá completando con los resultados obtenidos, comparando nuestro enfoque de Deep Learning frente a un modelo base estándar.
+
+### Tabla de Modelos y Resultados
+La siguiente tabla recoge los modelos seleccionados para el estudio y sus métricas de rendimiento (se completará tras la fase de entrenamiento):
+
+| Modelo | Tipo de Algoritmo | MSE | RMSE | R² | Estado |
+| Regresión Lineal | Clásico | - | - | - |
+| Red Neuronal (MLP) | Deep Learning | - | - | - |
+
+Métricas de Evaluación:  
+Para este problema de Regresión, las métricas estándar utilizadas son:  
+- MSE (Mean Squared Error): Penaliza los errores grandes.  
+- RMSE (Root Mean Squared Error): Error promedio en las mismas unidades que la popularidad (0-100).  
+- R² (Coeficiente de Determinación): Indica qué porcentaje de la varianza de la popularidad es explicada por el modelo.  
 
 
 ## 📊 2. El Dataset
@@ -30,11 +47,3 @@ Uno de los desafíos principales de este dataset es la gran cantidad de valores 
 
 ### 3.2. Resultado del Preprocesamiento
 Tras aplicar filtros y eliminar outliers extremos de duración (+15 min), el dataset se redujo a ~166.000 muestras. Se ha aplicado normalización (StandardScaler) a todas las variables numéricas para el correcto funcionamiento de la Red Neuronal.
-
-
-## 🧠 4. Modelos y Metodología
-Métricas de Evaluación:  
-Para este problema de Regresión, las métricas estándar utilizadas son:  
-- MSE (Mean Squared Error): Penaliza los errores grandes.  
-- RMSE (Root Mean Squared Error): Error promedio en las mismas unidades que la popularidad (0-100).  
-- R² (Coeficiente de Determinación): Indica qué porcentaje de la varianza de la popularidad es explicada por el modelo.  
