@@ -17,9 +17,9 @@ Para este proyecto, se ha diseñado una tabla de experimentación que se irá co
 ### Tabla de Modelos y Resultados
 La siguiente tabla recoge los modelos seleccionados para el estudio y sus métricas de rendimiento (se completará tras la fase de entrenamiento):
 
-| Modelo | Tipo de Algoritmo | MSE | RMSE | R² | Estado |
-| Regresión Lineal | Clásico | - | - | - |
-| Red Neuronal (MLP) | Deep Learning | - | - | - |
+| Modelo | Tipo de Algoritmo | MSE | RMSE | R² | Estado |  
+| Regresión Lineal | Clásico | - | - | - |  
+| Red Neuronal (MLP) | Deep Learning | - | - | - |  
 
 Métricas de Evaluación:  
 Para este problema de Regresión, las métricas estándar utilizadas son:  
