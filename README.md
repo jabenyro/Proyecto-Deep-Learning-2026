@@ -17,11 +17,21 @@ Para este proyecto, se ha diseñado una tabla de experimentación que se irá co
 ### Tabla de Modelos y Resultados
 La siguiente tabla recoge los modelos seleccionados para el estudio y sus métricas de rendimiento (se completará tras la fase de entrenamiento):
 
-| Modelo              | Tipo de Algoritmo        | MSE (Test) | RMSE (Test) | R² (Test) | Estado |
-|---------------------|--------------------------|------------|-------------|-----------|--------|
-| Regresión Lineal    | Modelo clásico           | 114.93     | 10.72       | 0.7505    | Baseline |
-| Random Forest       | Machine Learning (Trees) | 89.44      | 9.46        | 0.8058    | ⭐ Mejor modelo |
-| Red Neuronal (MLP)  | Deep Learning            | 107.44     | 10.37       | 0.7668    | Estable |
+| Modelo                        | Tipo de Algoritmo        | MSE (Test) | RMSE (Test) | R² (Test) | Estado |
+|-------------------------------|--------------------------|------------|-------------|-----------|--------|
+| Regresión Lineal              | Modelo clásico           | 114.93     | 10.72       | 0.7505    | Baseline|
+| Random Forest                 | Machine Learning (Trees) | 89.44      | 9.46        | 0.8058    | ⭐ Mejor modelo global|
+| Red Neuronal (MLP)            | Deep Learning            | 107.44     | 10.37       | 0.7668    | Estable |
+| Red Más Neuronas (C1)         | Deep Learning            | 99.27      | 9.96        | 0.7845    | Estable |
+| Red Varias Capas (C2)         | Deep Learning            | 93.26      | 9.66        | 0.7975    | Estable |
+| Red Con Dropout (C3)          | Deep Learning            | 94.11      | 9.70        | 0.7957    | Estable |
+| Red Batch Normalization (C4)  | Deep Learning            | 91.30      | 9.55        | 0.8018    | Estable |
+| Red Ancha (C5)                | Deep Learning            | 93.36      | 9.66        | 0.7973    | Estable |
+| Red Wide & Deep (C6)          | Deep Learning            | 91.91      | 9.59        | 0.8005    | Estable |
+| Red Residual (C7)             | Deep Learning            | 91.33      | 9.56        | 0.8017    | Estable |
+| Red Profunda Optimizada (C8)  | Deep Learning            | 90.59      | 9.52        | 0.8033    | Estable |
+| Red Alta Convergencia (C9)    | Deep Learning            | 90.03      | 9.49        | 0.8046    | Estable |
+| Red Swish (C10)               | Deep Learning            | 89.97      | 9.49        | 0.8047    | ⭐ Mejor modelo de Red Neuronal|
 
 Métricas de Evaluación:  
 Para este problema de Regresión, las métricas estándar utilizadas son:  
