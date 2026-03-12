@@ -1031,7 +1031,7 @@ Total de parámetros:
 
 Parámetros entrenables:
 
-14289
+140289
 
 ---
 
